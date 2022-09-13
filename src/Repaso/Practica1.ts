@@ -1,6 +1,4 @@
-
-
-
+import { visitFunctionBody } from "typescript"
 
 //
 interface direccionAlumno{
@@ -8,7 +6,6 @@ interface direccionAlumno{
     pais: string,
     estado: string,
     numero: any,
-
 }
 interface utlAlumno{
     nombre:string,
@@ -30,5 +27,5 @@ const pruebaAlumno:utlAlumno ={
         mostrarDireccion(){
             return this.nombre+', '+ this.edad+','+ this.direccion.calle+ ','+this.direccion.pais+','+this.direccion.estado+','+this.direccion.pais+','+this.direccion.numero
 }  
-
-}
+}  
+    console.log(pruebaAlumno);
