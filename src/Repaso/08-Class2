@@ -1,0 +1,34 @@
+class tabla {
+    private numero : number;
+    public tem;
+
+    setNumero(a:number){
+        this.numero=a;
+
+    }
+    getNumero():number{
+
+        return this.numero;
+    }
+
+    calcular():void{
+        for (let index = 1; index <11; ++index) {
+            console.log(`${this.numero} x ${index} = ${index*this.numero}`)
+            
+        }
+
+        let s: number=1;
+        while(s<11){
+            console.log(`${this.numero} x ${s} = ${s*this.numero}`);
+            ++s;}
+        }
+
+    }
+
+
+    let tabla1 = new tabla();
+    tabla1.setNumero(7);
+    console.log(+ tabla1.getNumero());
+    tabla1.tem=6;
+    console.log(tabla1.tem);
+
